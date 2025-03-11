@@ -1,0 +1,32 @@
+
+Total Incidents = COUNT('Cause of  death'[Death ID])
+
+
+Total Fatalities = SUMX('Cause of  death', 'Cause of  death'[Fatalities])
+
+
+Total Injuries = SUMX('Cause of  death', 'Cause of  death'[Injuries])
+
+
+Labels Bar Chart = 
+VAR _IncidentType = SELECTEDVALUE('Cause of  death'[Incident_Type])
+VAR _Value = [Total Fatalities]
+VAR _Label = _IncidentType & " | " & _Value
+RETURN
+_Label
+
+
+Label Bar Chart  injuries = 
+VAR _IncidentType = SELECTEDVALUE('Cause of  death'[Incident_Type])
+VAR _Value = [Total Injuries]
+VAR _Label = _IncidentType & " | " & _Value
+RETURN
+_Label
+
+
+Label Bar Chart  cause of death = 
+VAR _CauseofDeath = SELECTEDVALUE('Cause of  death'[Cause_of_death])
+VAR _Value = [Total Fatalities]
+VAR _Label = _CauseofDeath & " | " & _Value
+RETURN
+_Label
