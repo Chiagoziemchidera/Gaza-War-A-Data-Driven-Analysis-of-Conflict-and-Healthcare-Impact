@@ -52,7 +52,7 @@ The dataset appears to be generally clean and well-structured, but here are key 
   - Numeric columns like `Fatalities` and `Injuries` are correctly typed as integers.
   - Categorical/text columns are stored as text types.
 
- - **The DAX formula used on the Power BI report can be seen in [DAX Formula](
+ - **The DAX formula used on the Power BI report can be seen in [DAX Formula](https://github.com/Chiagoziemchidera/Gaza-War-A-Data-Driven-Analysis-of-Conflict-and-Healthcare-Impact/blob/main/DAX%20Formula)
 
 ## Analysis Insights
 
